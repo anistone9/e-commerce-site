@@ -1,14 +1,14 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-// The `/api/tags` endpoint - is there anything required here?
+// The `/api/tags` endpoint
 
 // GET all tags
-// include its associated Product data - need help
+// include its associated Product data
 router.get('/', async (req, res) => {
   try {
     const tagData = await Tag.findAll({
-      include: [{ model: Product }],
+      include: [{ model: Product, through: ProductTag }],
     });
     res.status(200).json(tagData);
   } catch (err) {
@@ -17,11 +17,11 @@ router.get('/', async (req, res) => {
 });
 
 //GET a single tag by its `id`
-// include its associated Product data - need help
+// include its associated Product data
 router.get('/:id', async (req, res) => {
   try {
     const tagData = await Tag.findByPk(req.params.id, {
-      include: [{ model: Product }],
+      include: [{ model: Product, through: ProductTag }],
     });
 
     if (!tagData) {
@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// UPDATE a tag's name by its `id` value - need help
+// UPDATE a tag's name by its `id` value
 router.put('/:id', async (req, res) => {
   const tagData = await Tag.update(
     {

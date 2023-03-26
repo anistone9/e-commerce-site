@@ -4,12 +4,12 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// Products belongsTo Category - need review
+// Products belongsTo Category
 Product.belongsTo(Category, {
   foreignKey: 'category_id',
 });
 
-// Categories have many Products - need review
+// Categories have many Products
 Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
