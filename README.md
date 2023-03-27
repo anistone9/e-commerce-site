@@ -1,5 +1,5 @@
 # e-commerce-site
-Back End for E-Commerce Site Using Express.js and MySQL   
+Back End Project for E-Commerce Site Using Express.js and MySQL   
 
 ## User Story   
 
@@ -19,10 +19,7 @@ THEN my server is started and the Sequelize models are synced to the MySQL datab
 WHEN I open API GET routes in Insomnia for categories, products, or tags   
 THEN the data for each of these routes is displayed in a formatted JSON   
 WHEN I test API POST, PUT, and DELETE routes in Insomnia   
-THEN I am able to successfully create, update, and delete data in my database       
-
-## Description     
-This project consisted in building the back end for an e-commerce site, by configuring the provided Express.js API started code to use Sequelize in order to interact with a MySQL database.   
+THEN I am able to successfully create, update, and delete data in my database        
 
 # Table of Contents   
 - [Description](#description)   
@@ -32,11 +29,16 @@ This project consisted in building the back end for an e-commerce site, by confi
 - [Credits](#credits)  
 - [License](#license)     
 
+## Description     
+This project consisted in building the back end for an e-commerce site, by configuring the provided Express.js started code to use Sequelize in order to interact with a MySQL database. The back end includes models and API routes for Products, Categories, and Tags. Object Relational Mapping (ORM) techniques were used to connect the relational database to the object-oriented programming language.   
+
 ## Installation   
 Clone the repository in GitHub, and install Node.js. MySQL2, Sequelize, Express, and dotenv are imported and used for this application.              
 
 # Usage    
-To use this application, first open the .env file and use environment variables to store your MySQL sensitive data such as username, password, and database name. Next, open the integrated terminal at db level and run npm install (npm i). Run source schema/sql and then seed the file.         
+To use this application, first open the .env file and use environment variables to store your MySQL sensitive data such as username, password, and database name.   
+Next, open the integrated terminal at db level and run 'npm install' (npm i). Then use 'mysql -y root -p' and password, and run 'source schema/sql.' Exit and run 'npm run seed.'     
+Last step is to run 'node server' and then open Insomnia to run the API routes.     
 
 ## Demo   
 
