@@ -42,7 +42,8 @@ Last step is to run 'node server' and then open Insomnia to run the API routes.
 
 ## Demo   
 
- 
+https://user-images.githubusercontent.com/58886869/228431608-5c522d3a-b995-4215-9735-4abc3983421a.mp4
+   
 
 ## Credits   
 University of Arizona Coding Bootcamp starter code, mock-up and lesson examples.    
