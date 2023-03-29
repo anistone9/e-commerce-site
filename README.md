@@ -30,7 +30,7 @@ THEN I am able to successfully create, update, and delete data in my database
 - [License](#license)     
 
 ## Description     
-This project consisted in building the back end for an e-commerce site, by configuring the provided Express.js started code to use Sequelize in order to interact with a MySQL database. The back end includes models and API routes for Products, Categories, and Tags. Object Relational Mapping (ORM) techniques were used to connect the relational database to the object-oriented programming language.   
+This project consisted in building the back end for an e-commerce site, by configuring the provided Express.js starter code to use Sequelize in order to interact with the MySQL database. The back end includes models and API routes for Products, Categories, and Tags. Object Relational Mapping (ORM) techniques were used to connect the relational database to the object-oriented programming language.   
 
 ## Installation   
 Clone the repository in GitHub, and install Node.js. MySQL2, Sequelize, Express, and dotenv are imported and used for this application.              
